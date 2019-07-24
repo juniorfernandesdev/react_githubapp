@@ -16,7 +16,7 @@ function App() {
         title='Repositorios:'
         repos={[{
           name: 'Nome do repositorio',
-          link: '#'
+          link: 'http://www.oi.com.br'
         }]}
       />
       <Starred />
