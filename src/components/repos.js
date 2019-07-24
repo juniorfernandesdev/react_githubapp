@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Repos = ({ className, title, repos }) => (
     <div className={className}>
@@ -15,13 +16,13 @@ const Repos = ({ className, title, repos }) => (
 )
 
 Repos.defaultProps = {
-    className: ''
+    className: 'Teste'
 }
 
 Repos.propTypes = {
-    className: React.PropTypes.string,
-    title: React.PropTypes.string.isRequired,
-    repos: React.PropTypes.array
+    className: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    repos: PropTypes.array
 
 }
 

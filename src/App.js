@@ -1,27 +1,39 @@
-import React from 'react';
-import Search from './components/search';
-import UserInfo from './components/user-info';
-import Actions from './components/actions';
-import Repos from './components/repos';
-import Starred from './components/starred';
+import React, { Component } from 'react';
+import AppContent from './components/app-content';
 
-function App() {
-  return (
-    <div className="App">
-      <Search />
-      <UserInfo />
-      <Actions />
-      <Repos 
-        className='repos' 
-        title='Repositorios:'
-        repos={[{
-          name: 'Nome do repositorio',
-          link: 'http://www.teste.com.br'
-        }]}
+class App extends Component {
+  constructor () {
+    super()
+    this.state = {
+      userinfo: {
+        name: 'Junior Fernandes',
+        photo: 'https://avatars1.githubusercontent.com/u/42782419?v=4',
+        login: 'JuniorFernades',
+        repos: 12,
+        followers: 10,
+        following: 12
+      },
+      repos: [{
+        name: 'Repo',
+        link: '#'
+      }],
+      starred: [{
+        name: 'Repo',
+        link: '#'
+      }]
+
+    }
+  }
+
+  render () {
+    return (
+      <AppContent 
+        userinfo={this.state.userinfo}
+        repos={this.state.repos}
+        starred={this.state.starred}
       />
-      <Starred />
-    </div>
-  );
+    )
+  } 
 }
 
 export default App;
