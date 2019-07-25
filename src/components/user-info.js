@@ -18,7 +18,7 @@ UserInfo.propTypes = {
     name: PropTypes.string.isRequired,
     login: PropTypes.string.isRequired,
     repos: PropTypes.number.isRequired,
-    phoyo: PropTypes.string.isRequired,
+    photo: PropTypes.string.isRequired,
     followers: PropTypes.number.isRequired,
     following: PropTypes.number.isRequired
   })

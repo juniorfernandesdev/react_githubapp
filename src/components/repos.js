@@ -16,7 +16,7 @@ const Repos = ({ className, title, repos }) => (
 )
 
 Repos.defaultProps = {
-    className: 'Teste'
+    className: ''
 }
 
 Repos.propTypes = {
